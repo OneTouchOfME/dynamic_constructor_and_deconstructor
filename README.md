@@ -1,7 +1,7 @@
-# dynamic_constructor_and_deconstructor
-
 #include <iostream>
+  
 using namespace std;
+
 class A{
   int *x;
   public:
