@@ -1,6 +1,6 @@
 # dynamic_constructor_and_deconstructor
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 class A{
   int *x;
@@ -8,13 +8,13 @@ class A{
   A(){ 
       x=new int();
       cout<<"no parameter"<<endl;
-  }
+   }
   void set_value(int y){*x=y;}
-//   A(int y)
-//   {    x=new int;
-//       *x=y;
-//       cout<<"one parameter"<<endl;
-//   }
+    A(int y)
+     {    x=new int;
+          *x=y;
+          cout<<"one parameter"<<endl;
+     }
    ~A(){
       delete x;
       cout<<"deleted"<<endl;
